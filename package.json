@@ -1,0 +1,16 @@
+{
+  "name": "campus-navigation-system",
+  "version": "1.0.0",
+  "description": "Full-Stack Campus Navigation System with Dijkstra Shortest Pathfinding, Interactive Leaflet Map & SQLite",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "npm run dev --prefix backend",
+    "dev:frontend": "npm run dev --prefix frontend",
+    "start": "concurrently \"npm run start --prefix backend\" \"npm run dev --prefix frontend\"",
+    "seed": "npm run seed --prefix backend",
+    "install:all": "npm install && npm install --prefix backend && npm install --prefix frontend"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.4"
+  }
+}
